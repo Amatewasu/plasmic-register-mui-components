@@ -1,0 +1,58 @@
+import {
+  Chip as MuiChip,
+} from '@mui/material';
+import { PlasmicComponentLoader } from '@plasmicapp/loader-react';
+
+/**
+ * Register the MUI Chip component - https://mui.com/components/chips/
+ * @param PLASMIC Component loader
+ */
+function registerMuiChip(PLASMIC: PlasmicComponentLoader){
+  PLASMIC.registerComponent(MuiChip, {
+    name: 'MuiChip',
+    props: {
+      label: 'slot',
+      disabled: {
+        type: 'boolean',
+        default: false,
+      },
+      clickable: {
+        type: 'boolean',
+        default: false,
+      },
+      color: {
+        type: 'choice',
+        options: [
+          'default',
+          'primary',
+          'secondary',
+          'error',
+          'success',
+          'info',
+          'warning',
+        ],
+        default: 'default',
+      },
+      icon: {
+        type: 'slot',
+        hidePlaceholder: true,
+      },
+      size: {
+        type: 'choice',
+        options: ['medium', 'small'],
+        default: 'medium',
+      },
+      variant: {
+        type: 'choice',
+        options: ['filled', 'outlined'],
+        default: 'filled',
+      },
+      avatar: {
+        type: 'slot',
+        hidePlaceholder: true,
+      },
+    },
+  });
+}
+
+export default registerMuiChip;
