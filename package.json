@@ -1,6 +1,6 @@
 {
   "name": "plasmic-register-mui-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "register the mui components into your plasmic project",
   "repository": "git@github.com:Amatewasu/plasmic-register-mui-components.git",
   "author": "Alexis DELRIEU",
