@@ -1,10 +1,11 @@
 {
   "name": "plasmic-register-mui-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "register the mui components into your plasmic project",
   "repository": "git@github.com:Amatewasu/plasmic-register-mui-components.git",
   "author": "Alexis DELRIEU",
   "license": "MIT",
+  "main": "src/index.ts",
   "scripts": {
     "build": "tsc src/index.ts",
     "lint": "eslint ./src/*.{js,ts,tsx} --quiet --fix"
